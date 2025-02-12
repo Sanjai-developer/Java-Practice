@@ -5,6 +5,7 @@ class A    //parent class
   {
     System.out.println("in A");
   }
+  
 }
 class B extends A    //child class
 {
