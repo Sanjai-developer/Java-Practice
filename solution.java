@@ -1,36 +1,22 @@
 
 class A    //parent class
 {
-  public A()
-  { 
-    super();
-    System.out.println("in A");
-  }
-  public A(int n){
-    super();
-    System.out.println(" In A int");
-  }
-}
-class B extends A    //child class
-{
-  public B()
-  {
-    super();
-    System.out.println("in B");
-  }
-  public B(int n)
-  {
-    this();
-    System.out.println("in B int");
-  }
-  
+ public A(){
+  System.out.println("in constructor A");
+ }
+ public void show()
+ {
+  System.out.println("in method show A");
+ }
 }
 
 public class solution 
 {
     public static void main(String args[]) 
     {
-          B obj = new B(10);
-
+        A obj ;
+        obj =  new A();
+        obj.show();
+        new A();   //anonymous object
     }
 }
