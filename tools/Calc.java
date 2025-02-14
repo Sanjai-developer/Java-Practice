@@ -1,3 +1,4 @@
+package tools;  //package name
 
 public class Calc   //parent class
 {
