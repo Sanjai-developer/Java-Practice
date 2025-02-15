@@ -1,5 +1,5 @@
 import java.util.*;
-class Myclass extends Thread{
+class Myclass implements Runnable{
     public void run(){
         System.out.println(" Threads are Running");
         for(int i=0;i<=5;i++){
@@ -16,7 +16,7 @@ class Myclass extends Thread{
 }
 public class Threadexample {
     public static void main(String[] args){
-        Myclass t1 = new Myclass();
+        Thread t1 = new Thread(new Myclass());
         t1.start();
     }
 }
